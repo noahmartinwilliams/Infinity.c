@@ -1,0 +1,7 @@
+*Add getopt options (so it can do things OTHER than spit out unreadable characters).
+*Translate README into man page for Linux.
+*Get this into Linux software repositories.
+*Test this on a Windows machine so Windows users can see infinity.
+*Figure out what to do about it telling everyone my password and private key as well as the password and private key of everyone who has ever existed/ever will exist.
+*Get an infinite amount of memory so I can test it right.
+*Be amazed at the awesome size of infinity.
