@@ -78,7 +78,7 @@ int main(int argc, char *argv[])
 		*/
 
 	struct option long_options[]={
-		{ "pseudo-random", no_argument, 0, 'r' }
+		{ "pseudo-random", no_argument, 0, 'r' },
 		{ "infinite-memory", no_argument, 0, 'm' }
 	};
 	int option_index=0;
