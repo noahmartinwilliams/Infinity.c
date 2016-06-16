@@ -108,8 +108,17 @@ int main(int argc, char *argv[])
 			}
 		}
 	} else {
-		while (1) 
-			printf("%c", (char) random()); /* Pffft. What kind of weenies don't have infinite memory? :/ */
+		FILE *rand=fopen("/dev/random", "r");
+		unsigned int number;
+		while (1) {
+			fread(&number, sizeof(unsigned int), 1, rand);
+			srandom(number);
+			int x;
+			for (x=0; x<100; x++) {
+				long int out=random();
+				write(1, &out, sizeof(long int));
+			}
+		}
 			
 	}
 	return 0;
